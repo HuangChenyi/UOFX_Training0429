@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Ede.Uofx.PubApi.Sdk.NetStd">
+      <HintPath>..\..\..\..\OneDrive - 一等一科技股份有限公司\UOFX2.92\SDK_20240201\Ede.Uofx.PubApi.Sdk.NetStd.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\OneDrive - 一等一科技股份有限公司\UOFX2.92\SDK_20240201\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
