@@ -19,6 +19,8 @@ import { BpmFwWriteComponent, UofxFormTools } from '@uofx/web-components/form';
 import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 
 import { Demo4FieldExProps } from '../props/demo4-field.props.component';
+import { SelectdataComponent } from '../selectdata/selectdata.component';
+import { UofxDialogController } from '@uofx/web-components/dialog';
 
 /*修改*/
 /*↑↑↑↑修改import 各模式的Component↑↑↑↑*/
@@ -46,7 +48,8 @@ export class Demo4FieldWriteComponent
   constructor(
     private cdr: ChangeDetectorRef,
     private fb: UntypedFormBuilder,
-    private tools: UofxFormTools
+    private tools: UofxFormTools,
+    private dialogCtrl: UofxDialogController
   ) {
     super();
   }
@@ -75,6 +78,34 @@ export class Demo4FieldWriteComponent
       this.valueChanges.emit(res);
     });
     this.cdr.detectChanges();
+  }
+
+  Open()
+  {
+      this.dialogCtrl.createFullScreen({
+        component: SelectdataComponent,
+        params: {
+           /*開窗要帶的參數*/
+           url:this.pluginSetting.entryHost
+        }
+      }).afterClose.subscribe({
+        next: res => {
+        /*關閉視窗後處理的訂閱事件*/
+        if (res) {
+
+          /*開窗回傳的值*/
+          if (res) {
+            this.form.controls['companyName'].setValue(res.companyName);
+            this.form.controls['address'].setValue(res.address);
+            this.form.controls['phone'].setValue(res.phone);
+
+          }
+        }
+      }
+
+
+      });
+
   }
 
   initForm() {

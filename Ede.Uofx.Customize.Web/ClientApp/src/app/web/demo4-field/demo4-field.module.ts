@@ -14,17 +14,16 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
+import { CustomerService } from '@service/customer.Sertice';
+import { Demo4FieldPropsComponent } from './props/demo4-field.props.component';
+import { Demo4FieldWriteComponent } from './write/demo4-field.write.component';
 import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { SelectdataComponent } from './selectdata/selectdata.component';
 import { TableModule } from 'primeng/table';
-
-
-import { Demo4FieldPropsComponent } from './props/demo4-field.props.component';
-
-import { Demo4FieldWriteComponent } from './write/demo4-field.write.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { UofxButtonModule } from '@uofx/web-components/button';
 import { UofxDialogModule } from '@uofx/web-components/dialog';
@@ -101,9 +100,9 @@ const BASIC_SERVICES = [
     ...PRIMENG_MODULES,
     ...UOF_MODULES,
   ],
-  providers: [BASIC_SERVICES, UofxPluginApiService],
+  providers: [BASIC_SERVICES, UofxPluginApiService,CustomerService],
   exports: [...COMPONENTS],
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, SelectdataComponent],
 })
 
 /*修改*/
