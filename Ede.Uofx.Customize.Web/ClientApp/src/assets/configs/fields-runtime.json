@@ -1,11 +1,34 @@
-{
-
+﻿{
   "template-field": {
     "exposedModule": "./TemplateField",
     "moduleName": "TemplateFieldModule",
     "app": {
       "exposedModule": "./TemplateField",
       "moduleName": "FieldHelloWorldAppModule"
+    }
+  },
+  "demo-field": {
+    "exposedModule": "./DemoField",
+    "moduleName": "DemoFieldModule",
+    "app": {
+      "exposedModule": "./DemoField",
+      "moduleName": "DemoAppModule"
+    }
+  },
+  "demo2-field": {
+    "exposedModule": "./Demo2Field",
+    "moduleName": "Demo2FieldModule",
+    "app": {
+      "exposedModule": "./Demo2Field",
+      "moduleName": "Demo2AppModule"
+    }
+  },
+  "demo3-field": {
+    "exposedModule": "./Demo3Field",
+    "moduleName": "Demo3FieldModule",
+    "app": {
+      "exposedModule": "./Demo3Field",
+      "moduleName": "Demo3FieldAppModule"
     }
   }
 }

@@ -1,12 +1,15 @@
-{
+﻿{
   "fieldGroups": [
     {
       "code": "group1",
       "name": "群組一"
+    },
+    {
+      "code": "group2",
+      "name": "群組2"
     }
   ],
   "fields": [
-
     {
       "group": "group1",
       "code": "template-field",
@@ -17,6 +20,42 @@
         "defaultRows": 1,
         "minCols": 1,
         "minRows": 1
+      }
+    },
+    {
+      "group": "group1",
+      "code": "demo-field",
+      "name": "demo-field",
+      "icon": "assets/icons/u-plugin-form.svg",
+      "sizeConfig": {
+        "defaultCols": 2,
+        "defaultRows": 1,
+        "minCols": 2,
+        "minRows": 1
+      }
+    },
+    {
+      "group": "group1",
+      "code": "demo2-field",
+      "name": "demo2-field",
+      "icon": "assets/icons/u-plugin-form.svg",
+      "sizeConfig": {
+        "defaultCols": 2,
+        "defaultRows": 1,
+        "minCols": 2,
+        "minRows": 1
+      }
+    },
+    {
+      "group": "group2",
+      "code": "demo3-field",
+      "name": "外掛欄位範例3",
+      "icon": "assets/icons/u-plugin-form.svg",
+      "sizeConfig": {
+        "defaultCols": "2",
+        "defaultRows": "2",
+        "minCols": "1",
+        "minRows": "1"
       }
     }
   ]

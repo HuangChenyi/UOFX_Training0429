@@ -54,8 +54,19 @@ const PRIMENG_MODULES = [];
       {
         path: 'template-field',
         loadChildren: () => import('./web/template-field/template-field.module').then((m) => m.TemplateFieldModule)
+      },
+      {
+        path: 'demo-field',
+        loadChildren: () => import('./web/demo-field/demo-field.module').then((m) => m.DemoFieldModule)
+      },
+      {
+        path: 'demo2-field',
+        loadChildren: () => import('./web/demo2-field/demo2-field.module').then((m) => m.Demo2FieldModule)
       }
-      //勿刪除存放module的路徑
+      ,{path: 'demo3-field',
+        loadChildren: () => import('./web/demo3-field/demo3-field.module').then((m) => m.Demo3FieldModule)
+      }
+        //勿刪除存放module的路徑
     ]),
     ...I18NSERVICE_MODULES,
     ...PRIMENG_MODULES,
