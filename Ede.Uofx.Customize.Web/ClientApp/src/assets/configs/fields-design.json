@@ -69,6 +69,18 @@
         "minCols": "1",
         "minRows": "1"
       }
+    },
+    {
+      "group": "group1",
+      "code": "optional5-field",
+      "name": "外掛欄位範例五",
+      "icon": "assets/icons/u-plugin-form.svg",
+      "sizeConfig": {
+        "defaultCols": "2",
+        "defaultRows": "1",
+        "minCols": "1",
+        "minRows": "1"
+      }
     }
   ]
 }

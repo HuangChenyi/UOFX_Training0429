@@ -38,5 +38,13 @@
       "exposedModule": "./Demo4Field",
       "moduleName": "Demo4FieldAppModule"
     }
+  },
+  "optional5-field": {
+    "exposedModule": "./Optional5Field",
+    "moduleName": "Optional5FieldModule",
+    "app": {
+      "exposedModule": "./Optional5Field",
+      "moduleName": "Optional5FieldAppModule"
+    }
   }
 }
