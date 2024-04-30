@@ -30,5 +30,13 @@
       "exposedModule": "./Demo3Field",
       "moduleName": "Demo3FieldAppModule"
     }
+  },
+  "demo4-field": {
+    "exposedModule": "./Demo4Field",
+    "moduleName": "Demo4FieldModule",
+    "app": {
+      "exposedModule": "./Demo4Field",
+      "moduleName": "Demo4FieldAppModule"
+    }
   }
 }

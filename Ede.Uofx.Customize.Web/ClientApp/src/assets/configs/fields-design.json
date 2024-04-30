@@ -57,6 +57,18 @@
         "minCols": "1",
         "minRows": "1"
       }
+    },
+    {
+      "group": "group2",
+      "code": "demo4-field",
+      "name": "外掛欄位範例4",
+      "icon": "assets/icons/u-plugin-form.svg",
+      "sizeConfig": {
+        "defaultCols": "4",
+        "defaultRows": "3",
+        "minCols": "1",
+        "minRows": "1"
+      }
     }
   ]
 }

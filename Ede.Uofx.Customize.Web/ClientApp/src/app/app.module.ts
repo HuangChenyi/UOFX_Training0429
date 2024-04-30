@@ -66,6 +66,9 @@ const PRIMENG_MODULES = [];
       ,{path: 'demo3-field',
         loadChildren: () => import('./web/demo3-field/demo3-field.module').then((m) => m.Demo3FieldModule)
       }
+        ,{path: 'demo4-field',
+        loadChildren: () => import('./web/demo4-field/demo4-field.module').then((m) => m.Demo4FieldModule)
+      }
         //勿刪除存放module的路徑
     ]),
     ...I18NSERVICE_MODULES,
