@@ -63,20 +63,17 @@ export class Demo4FieldWriteComponent
 
     this.parentForm.statusChanges.subscribe((res) => {
       if (res === 'INVALID' && this.selfControl.dirty) {
-        if (!this.form.dirty) {
+        if (this.form.dirty) {
+
           Object.keys(this.form.controls).forEach((key) => {
             this.tools.markFormControl(this.form.get(key));
           });
           this.form.markAsDirty();
         }
-      }
+       }
     });
 
-    this.form.valueChanges.subscribe((res) => {
-      this.selfControl?.setValue(res);
-      /*真正送出欄位值變更的函式*/
-      this.valueChanges.emit(res);
-    });
+
     this.cdr.detectChanges();
   }
 
@@ -128,6 +125,9 @@ export class Demo4FieldWriteComponent
   /*判斷如果是儲存不用作驗證*/
   checkBeforeSubmit(checkValidator: boolean): Promise<boolean> {
 
+
+    //儲存或送出才emit
+    this.valueChanges.emit(this.form.getRawValue());
     // 儲存不需要驗證，直接回傳true
     if (!checkValidator) {
       return new Promise((resolve) => {
@@ -150,10 +150,15 @@ export class Demo4FieldWriteComponent
 
     /** 實作送出前驗證 */
     checkFieldValid(resolve) {
-      this.setBeforeCheck(true);
+
+
+
+    this.tools.markFormGroup(this.form);
+
+     // this.setBeforeCheck(true);
       this.errorMsg = '';
       //實作驗證邏輯
-      if (false) {
+      if (this.form.value.companyName === 'test') {
         this.errorMsg = '放入錯誤訊息';
         resolve(false );
       } else {
