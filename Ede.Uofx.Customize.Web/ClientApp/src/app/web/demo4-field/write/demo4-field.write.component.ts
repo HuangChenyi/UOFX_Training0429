@@ -63,7 +63,7 @@ export class Demo4FieldWriteComponent
 
     this.parentForm.statusChanges.subscribe((res) => {
       if (res === 'INVALID' && this.selfControl.dirty) {
-        if (this.form.dirty) {
+        if (!this.form.dirty) {
 
           Object.keys(this.form.controls).forEach((key) => {
             this.tools.markFormControl(this.form.get(key));
@@ -115,6 +115,11 @@ export class Demo4FieldWriteComponent
       [Validators.pattern(/^09\d{8}$/)]],
     });
 
+    this.form.updateValueAndValidity();
+    this.form.valueChanges.subscribe((res) => {
+      this.valueChanges.emit(res);
+    });
+
     if (this.selfControl) {
       // 在此便可設定自己的驗證器
       this.selfControl.setValidators(validateSelf(this.form));
@@ -124,6 +129,7 @@ export class Demo4FieldWriteComponent
 
   /*判斷如果是儲存不用作驗證*/
   checkBeforeSubmit(checkValidator: boolean): Promise<boolean> {
+
 
 
     //儲存或送出才emit
