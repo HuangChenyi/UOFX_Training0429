@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UOFXTraining\\dev0429\\CourseLab\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "D:\\XTraining\\0429\\UOFX_Training0429\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "D:\\UOFXTraining\\dev0429\\CourseLab\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "D:\\XTraining\\0429\\UOFX_Training0429\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UOFXTraining\\dev0429\\CourseLab\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "D:\\XTraining\\0429\\UOFX_Training0429\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "D:\\UOFXTraining\\dev0429\\CourseLab\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "D:\\XTraining\\0429\\UOFX_Training0429\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\woodman\\.nuget\\packages\\",
-        "outputPath": "D:\\UOFXTraining\\dev0429\\CourseLab\\ConsoleApp1\\obj\\",
+        "outputPath": "D:\\XTraining\\0429\\UOFX_Training0429\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\woodman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

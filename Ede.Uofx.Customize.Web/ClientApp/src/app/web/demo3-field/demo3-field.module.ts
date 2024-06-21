@@ -14,22 +14,19 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
+import { Demo3FieldPropsComponent } from './props/demo3-field.props.component';
+import { Demo3FieldWriteComponent } from './write/demo3-field.write.component';
 import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TableModule } from 'primeng/table';
-
-
-import { Demo3FieldPropsComponent } from './props/demo3-field.props.component';
-
-import { Demo3FieldWriteComponent } from './write/demo3-field.write.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { UofxButtonModule } from '@uofx/web-components/button';
 import { UofxDialogModule } from '@uofx/web-components/dialog';
 import { UofxIconModule } from '@uofx/web-components/icon';
-import { UofxPluginApiService } from '@uofx/plugin-api';
+import { UofxPluginApiService } from '@uofx/plugin/api';
 import { UofxTextareaModule } from '@uofx/web-components/textarea';
 import { UofxToastModule } from '@uofx/web-components/toast';
 import { UofxUserSelectModule } from '@uofx/web-components/user-select';

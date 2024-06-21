@@ -5,12 +5,12 @@ import { UofxCameraPlugin, UofxGeolocationPlugin, UofxToastPlugin } from '@uofx/
 
 import { BasicHttpClient } from '@service/basic-http-client';
 import { CommonModule } from '@angular/common';
+import { Demo4FieldComponent } from './demo4-field.component';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
-import { Demo4FieldComponent } from './demo4-field.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { UofxFormFieldBaseModule } from '@uofx/app-components/form';
-import { UofxPluginApiService } from '@uofx/plugin-api';
+import { UofxPluginApiService } from '@uofx/plugin/api';
 
 const UOF_MODULES = [
   UofxFormFieldBaseModule,
